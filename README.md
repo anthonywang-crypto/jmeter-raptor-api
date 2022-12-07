@@ -23,6 +23,11 @@
 
  - 结果树 可以查看到事物是否成功，以及事物下面具体的sample请求
  <img width="1079" alt="image" src="https://user-images.githubusercontent.com/104351659/206145602-f1a0d4f6-743c-4928-b2fa-88fb6744d22b.png">
+ 
+ - 遍历过程中token超时的问题
+ 第250+ 事物登陆时出现token过期
+ <img width="1785" alt="image" src="https://user-images.githubusercontent.com/104351659/206156161-6f7811eb-11b1-4577-93b2-b998f2d3db18.png">
+
 
  
 ### 场景二
