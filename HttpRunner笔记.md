@@ -91,3 +91,11 @@ if __name__ == "__main__":
   
   ## httprunner与pytest结合的探索
   
+  ### 1. 查看API用例的更多详情（request data/respond data/extraction and validation）
+  argument -s (shortcut for --capture=no)
+  <img width="1419" alt="image" src="https://user-images.githubusercontent.com/104351659/206701825-b7823385-cf5d-4f49-ac2e-d8a7f9f990d2.png">
+  
+  ### 2. 结合pytest的用例标记（#todo）
+  
+
+  
