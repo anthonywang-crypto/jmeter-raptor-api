@@ -89,3 +89,5 @@ if __name__ == "__main__":
       .export： 从依赖的case中提取的session variable
     
   
+  ## httprunner与pytest结合的探索
+  
