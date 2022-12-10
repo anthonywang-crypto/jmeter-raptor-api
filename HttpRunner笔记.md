@@ -105,11 +105,12 @@ if __name__ == "__main__":
   <img width="1224" alt="image" src="https://user-images.githubusercontent.com/104351659/206866023-02113bb4-cb67-4a17-96d4-ad05d4d4a5a8.png">
 
   - allure报告生成命令
-  `
-  # 在线打开报告
-$ allure serve allure_result
-# 生成html报告
-allure generate allure_result -o reports/allure/html`
+  ```
+    # 在线打开报告
+    $ allure serve allure_result
+    # 生成html报告
+    allure generate allure_result -o reports/allure/html
+ ```python
   
 
   
