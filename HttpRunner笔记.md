@@ -110,7 +110,7 @@ if __name__ == "__main__":
     $ allure serve allure_result
     # 生成html报告
     allure generate allure_result -o reports/allure/html
- ```python
+ ```
   
 
   
