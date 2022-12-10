@@ -98,13 +98,18 @@ if __name__ == "__main__":
   ### 2. 结合pytest的用例标记（#todo）
   
   ### 3. allure报告的生成
-  直接使用pytest的原生命令，如下：
+  - 直接使用pytest的原生命令，如下：
   `pytest -s testcases/pytest_demo/requests_demo_test.py  --alluredir=allure_result `
   
-  如果使用hrp命令会报错，不识别的 --alluredir 参数：
+  - 如果使用hrp命令会报错，不识别的 --alluredir 参数：
   <img width="1224" alt="image" src="https://user-images.githubusercontent.com/104351659/206866023-02113bb4-cb67-4a17-96d4-ad05d4d4a5a8.png">
 
-  
+  - allure报告生成命令
+  `
+  # 在线打开报告
+$ allure serve allure_result
+# 生成html报告
+allure generate allure_result -o reports/allure/html`
   
 
   
