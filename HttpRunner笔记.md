@@ -109,8 +109,13 @@ if __name__ == "__main__":
     # 在线打开报告
     $ allure serve allure_result
     # 生成html报告
-    allure generate allure_result -o reports/allure/html
+    allure generate allure_result -o allure_report/html
+    allure open allure_report/html
  ```
+ 
+ - http_runner结合pytest+allure 生成报告的效果如图：
+ - <img width="1787" alt="image" src="https://user-images.githubusercontent.com/104351659/206867144-96d2fb3e-b43b-49f6-9c86-09c06922d205.png">
+
   
 
   
