@@ -1,12 +1,12 @@
-## 用例转换关系规划
+## 一. 用例转换关系规划
 <img width="775" alt="image" src="https://user-images.githubusercontent.com/104351659/206644514-990a3939-cbf1-489f-95ae-58347958cfd3.png">
 
 
-## V4.3版本实现逻辑 
+## 二. V4.3版本实现逻辑 
 <img width="783" alt="image" src="https://user-images.githubusercontent.com/104351659/206644974-d6472fd7-d77c-4f98-949d-08cce3a4681d.png">
 
 
-## httprunner 以pytest的模式编写用例的模版
+## 三. httprunner 以pytest的模式编写用例的模版
 
 ```python
 import os
@@ -89,7 +89,7 @@ if __name__ == "__main__":
       .export： 从依赖的case中提取的session variable
     
   
-  ## httprunner与pytest结合的探索
+  ## 四. httprunner与pytest结合的探索
   
   ### 1. 查看API用例的更多详情（request data/respond data/extraction and validation）
   argument -s (shortcut for --capture=no)
@@ -117,6 +117,31 @@ if __name__ == "__main__":
  - http_runner结合pytest+allure 生成报告的效果如图：
  - <img width="1787" alt="image" src="https://user-images.githubusercontent.com/104351659/206867144-96d2fb3e-b43b-49f6-9c86-09c06922d205.png">
 
-  
+ ### 结合pytest后同模块用例导包的问题
+ 问题描述：同模块的api用例，调用导包，会出现如下错误
+ ```python
+ Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/importlib/__init__.py:126: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+testcases/raptor/app/app_list_debug_test.py:8: in <module>
+    from login_debug_test import TestLoginDebug
+E   ModuleNotFoundError: No module named 'login_debug_test'
+ ```
+ 
+ 解决方案一：
+ 同模块的test文件增加 .
+ `from .login_debug_test import TestLoginDebug`
+ 
+ 解决方案二：
+ 要引入的test文件增加path路径
+ ```python
+ # import sys
+# from pathlib import Path
+# sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+ ```
+ 
+
+  ## 五. todo
 
   
