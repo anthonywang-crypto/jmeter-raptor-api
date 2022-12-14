@@ -147,6 +147,26 @@ from .login_debug_test import TestLoginDebug
   ## 五. JMESPATH规则提取json数据
   参考链接：https://jmespath.org/?
   
-  ## 六. todo
+  ## 六. pycharm快捷键
+  Pycharm常用快捷键（Mac）
+Mac键盘符号和修饰键说明
 
-  
+⌘ Command
+⇧ Shift
+⌥ Option
+⌃ Control
+↩︎ Return/Enter
+⌫ Delete
+command  + 左键 	简介及代码定
+command + d	复制当前行到下一行
+command + y  删除当前行
+command + / 	添加注释，再按一次取消注释（适用于多行注释）
+command + f	文件内查找
+command+ r	文件内替换
+command + shift + enter	智能代码补全
+command+ shift+ ↑or ↓	代码上下移动
+command + ← 	光标移到行首
+command + →	光标移到行末
+Shift + Enter  任意位置换行
+**双击Shift  快速查找**
+**command+Option+L	格式化代码**
